@@ -17,8 +17,7 @@ Satellite Layer: High-resolution satellite imagery.
 
 Custom Layer: An alternative custom base map.
 
-# 🖱️ GIS Data Interaction: Double-clicking on any campus building opens a popup with its details (Photo, Warden/HOD name, contact, area, etc.).
-
+# 🖱️ GIS Data Interaction:
 🚀 Navigation & Directions: Uses @mapbox/mapbox-gl-directions for turn-by-turn navigation, similar to Google Maps.
 
 📍 "Navigate from My Location": A button that allows users to start navigation directly from their current location.
@@ -27,6 +26,8 @@ Custom Layer: An alternative custom base map.
 
 🔍 Search: A search box powered by @mapbox/search-js-react that uses the Mapbox Geocoding API to find any location worldwide.
 
+🚀 Double-clicking on any campus building opens a popup with its details (Photo, Warden/HOD name, contact, area, etc.).
+
 🏞️ Static Info Pages: Displays static images exported from ArcGIS, such as a Contour Map and a Land Use Land Cover (LULC) Map.
 
 🔒 Secure Authentication: Includes Login and SignUp pages to connect to the backend API.
@@ -34,17 +35,17 @@ Custom Layer: An alternative custom base map.
 # 💡 Architecture: ArcGIS + Mapbox + React
 The process for handling GIS data in this project is unique:
 
-Data Creation (ArcGIS): All spatial data for the campus (building polygons, road lines, points of interest) was created in ArcGIS Pro.
+🚀 Data Creation (ArcGIS): All spatial data for the campus (building polygons, road lines, points of interest) was created in ArcGIS Pro.
 
-Data Export (ArcGIS): This data was exported from ArcGIS into Shapefile or GeoJSON formats.
+🚀 Data Export (ArcGIS): This data was exported from ArcGIS into Shapefile or GeoJSON formats.
 
-Data Hosting (Mapbox Studio): These exported files were uploaded to Mapbox Studio as a "Tileset" (a data layer).
+🚀 Data Hosting (Mapbox Studio): These exported files were uploaded to Mapbox Studio as a "Tileset" (a data layer).
 
-Styling (Mapbox Studio): A new "Map Style" was created. This style uses "Satellite" as the base layer and adds the uploaded MANIT data tileset (manitlanddatamark-3rdbdl) on top, with custom styling (e.g., coloring buildings red).
+🚀 Styling (Mapbox Studio): A new "Map Style" was created. This style uses "Satellite" as the base layer and adds the uploaded MANIT data tileset (manitlanddatamark-3rdbdl) on top, with custom styling (e.g., coloring buildings red).
 
-Loading (React): This React app uses the mapbox-gl-js library to load that specific Style URL (mapbox://styles/...) directly.
+🚀 Loading (React): This React app uses the mapbox-gl-js library to load that specific Style URL (mapbox://styles/...) directly.
 
-Interaction (React): Using functions like map.on("dblclick", ...) and map.queryRenderedFeatures(...), the app interacts with Mapbox and reads the properties of the (now hosted) ArcGIS data.
+🚀 Interaction (React): Using functions like map.on("dblclick", ...) and map.queryRenderedFeatures(...), the app interacts with Mapbox and reads the properties of the (now hosted) ArcGIS data.
 
 # 🛠️ Tech Stack
 Frontend: React (Hooks)
