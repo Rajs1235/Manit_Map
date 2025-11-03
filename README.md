@@ -9,7 +9,7 @@ Live Demo: https://bobbymanitmap.netlify.app/
 # ✨ Features
 🗺️ Interactive GIS Map: A fully functional map built with Mapbox GL JS, supporting pan, zoom, and rotate.
 
-** LAYER Multiple Map Layers:** Users can switch between different map layers:
+# LAYER Multiple Map Layers:** Users can switch between different map layers:
 
 MANIT Layer: Custom GIS data (buildings, hostels, departments).
 
@@ -17,7 +17,7 @@ Satellite Layer: High-resolution satellite imagery.
 
 Custom Layer: An alternative custom base map.
 
-🖱️ GIS Data Interaction: Double-clicking on any campus building opens a popup with its details (Photo, Warden/HOD name, contact, area, etc.).
+# 🖱️ GIS Data Interaction: Double-clicking on any campus building opens a popup with its details (Photo, Warden/HOD name, contact, area, etc.).
 
 🚀 Navigation & Directions: Uses @mapbox/mapbox-gl-directions for turn-by-turn navigation, similar to Google Maps.
 
@@ -31,7 +31,7 @@ Custom Layer: An alternative custom base map.
 
 🔒 Secure Authentication: Includes Login and SignUp pages to connect to the backend API.
 
-💡 Architecture: ArcGIS + Mapbox + React
+# 💡 Architecture: ArcGIS + Mapbox + React
 The process for handling GIS data in this project is unique:
 
 Data Creation (ArcGIS): All spatial data for the campus (building polygons, road lines, points of interest) was created in ArcGIS Pro.
@@ -46,7 +46,7 @@ Loading (React): This React app uses the mapbox-gl-js library to load that speci
 
 Interaction (React): Using functions like map.on("dblclick", ...) and map.queryRenderedFeatures(...), the app interacts with Mapbox and reads the properties of the (now hosted) ArcGIS data.
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 Frontend: React (Hooks)
 
 Routing: React Router DOM
@@ -55,7 +55,7 @@ Mapping: Mapbox GL JS, @mapbox/search-js-react, @mapbox/mapbox-gl-directions
 
 Styling: Tailwind CSS
 
-🚀 How to Run (Local Development)
+# 🚀 How to Run (Local Development)
 Clone the Repository:
 
 Bash
@@ -83,7 +83,7 @@ Bash
 npm start
 Your project will start on http://localhost:3000 (or 5173 if you are using Vite).
 
-👥 Project Team
+# 👥 Project Team
 
 Team Members:
 Bobydayal Saket (B.Tech 3rd Year)
