@@ -1,11 +1,12 @@
-🗺️ MANIT Campus GIS - React Frontend
+ # 🗺️ MANIT Campus GIS - React Frontend
+
 This is an interactive GIS web application built for the MANIT (Maulana Azad National Institute of Technology) Bhopal campus. It allows students, faculty, and visitors to explore the campus, get detailed information about buildings, and use navigation features.
 
 This project is built using React, Mapbox GL JS, and Tailwind CSS.
 
 Live Demo: https://bobbymanitmap.netlify.app/
 
-✨ Features
+# ✨ Features
 🗺️ Interactive GIS Map: A fully functional map built with Mapbox GL JS, supporting pan, zoom, and rotate.
 
 ** LAYER Multiple Map Layers:** Users can switch between different map layers:
